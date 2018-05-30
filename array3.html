@@ -13,20 +13,16 @@
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
     	$(function(){
-    		var a = "aaaaaabnnnnkdkfmwww";
+    		var a = "aaaaaabnnnnkdkfmwwaaaaw";
             var json={};
-            var t= 0;
             for(var i=0;i<a.length;i++){
-                console.log(json[a[i]]);
                 if(!json[a[i]]){
-                    console.log("nihao");
-                    t = 0;
-                    json[a[i]] = 0;
+                    json[a[i]] = 1;
+                }else{
+                    json[a[i]] = json[a[i]]+1;
                 }
-                 t=t+1;
-                 json[a[i]] = t;
             }
-            console.log(json);
+            console.log(json)
     	})
     </script>
 </html>
