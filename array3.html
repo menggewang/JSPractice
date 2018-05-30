@@ -15,21 +15,17 @@
     	$(function(){
     		var a = "aaaaaabnnnnkdkfmwww";
             var json={};
-            var b = [];
-            var c = [];
+            var t= 0;
             for(var i=0;i<a.length;i++){
-               if(a[i].indexOf = -1){
-                    b.push(a[i]);
-                    alert(a[i])
-               }
+                console.log(json[a[i]]);
+                if(!json[a[i]]){
+                    console.log("nihao");
+                    t = 0;
+                    json[a[i]] = 0;
+                }
+                 t=t+1;
+                 json[a[i]] = t;
             }
-            console.log(b);
-            // for(var j=0;j<b.length;j++){
-            //     if(a[i] == b[j]){
-            //         c[j] = c[j]+1;
-            //         json[b[j]] = c[j];
-            //     }
-            // }
             console.log(json);
     	})
     </script>
